@@ -8,8 +8,13 @@
 # Version: V1
 ########################
 
+# Set the script in debug mode
 set -x
+
+# Exit immediately if any command fails
 set -e
+
+# Capture the failure of any command in a pipeline
 set -o pipefail
 
 output_file="aws_resource_usage_$(date +'%d-%B-%Y').txt"
